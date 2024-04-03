@@ -1,0 +1,34 @@
+h2 {
+    font-size: 1.2em;
+}
+
+.wrap {
+    max-width: 800px;
+    margin: auto;
+}
+
+.flex-box {
+    display: flex;
+}
+
+#kon-standing-picture {
+    width: 48%;
+    height: auto;
+    margin-right: 32px;
+}
+
+.activity-location-link a {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background: #f5f6fa;
+    margin: 16px 0;
+    padding: 0 16px;
+}
+
+.activity-location-link a span {
+    margin-right: 8px;
+    margin-bottom: -5px;
+}
