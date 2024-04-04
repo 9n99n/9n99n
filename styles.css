@@ -2,6 +2,19 @@ h2 {
     font-size: 1.2em;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
+.display-block {
+    display: block;
+}
+
+.small-text {
+    font-size: small;
+    font-weight: normal;
+}
+
 .wrap {
     max-width: 800px;
     margin: auto;
@@ -11,24 +24,63 @@ h2 {
     display: flex;
 }
 
+.introduction {
+    width: 50%;
+}
+
 #kon-standing-picture {
     width: 48%;
     height: auto;
     margin-right: 32px;
 }
 
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .activity-location-link a {
-    width: 250px;
+    width: 39%;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #333;
     background: #f5f6fa;
-    margin: 16px 0;
+    margin: 8px 0;
     padding: 0 16px;
 }
 
-.activity-location-link a span {
+.activity-location-link a:nth-child(odd){
     margin-right: 8px;
+}
+
+.activity-location-link a span {
+    margin-right: 16px;
     margin-bottom: -5px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        max-width: 100%;
+    }
+    .flex-box {
+        display: block;
+        padding: 8px;
+    }
+    .activity-location-link a {
+        width: 90%;
+    }
+    p.bio {
+        max-width: 100%;
+        box-sizing: border-box; /* paddingやborderも含めた要素の幅をmax-widthに含める */
+        overflow-wrap: break-word; /* テキストが要素の幅を超える場合に改行する */
+    }
+    .introduction {
+        width: 100%;
+    }
+    #kon-standing-picture {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
 }
