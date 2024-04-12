@@ -6,6 +6,16 @@ h1 {
     font-size: 1.5em;
 }
 
+main {
+    height: 100vh;
+}
+
+#header-logo {
+    display: block;
+    margin: 32px auto 0;
+    width: 30%;
+}
+
 .display-block {
     display: block;
 }
@@ -59,7 +69,36 @@ h1 {
     margin-bottom: -5px;
 }
 
+.my-game-link {
+    list-style: none;
+}
+
+.my-game-link li:before {
+    content: "▶";
+    margin-right: 5px;
+  }
+
+.my-game-link li a {
+    display: inline-block;
+    padding: 8px 0;
+    color: black;
+}
+
+footer {
+    margin-top: 64px;
+}
+
+footer p {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 16px 0;
+}
+
 @media screen and (max-width: 768px) {
+    main {
+        height: auto;
+    }
+    
     .wrap {
         max-width: 100%;
     }
